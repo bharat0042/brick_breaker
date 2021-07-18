@@ -5,16 +5,12 @@
 
 class Bat
 {
-private:
-	/* 
-	 *sf::Vector2 is a simple class that defines a mathematical vector with two coordinates (x and y)
-	 * syntax wise its same as pair of float
-	 */
+private: 
+	// sf::Vector2 is a simple class that defines a mathematical vector with two coordinates (x and y)
+	// syntax wise its same as pair of float
 	sf::Vector2f mPosition;
-
-	/* 
-     * Specialized shape representing a rectangle
-     */
+ 
+    // Specialized shape representing a rectangle
 	sf::RectangleShape mBatShape;
 
 	float batSpeed = 0.3f;
