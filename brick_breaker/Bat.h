@@ -18,6 +18,7 @@ private:
 public:
 	Bat(float nStartX, float nStartY);
 	sf::FloatRect getPosition();
+	sf::RectangleShape getShape();
 	void moveLeft();
 	void moveRight();
 	void update();

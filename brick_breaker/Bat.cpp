@@ -17,6 +17,12 @@ sf::FloatRect Bat::getPosition()
 	return mBatShape.getGlobalBounds();
 }
 
+// return the RectangleShape object representing bat
+sf::RectangleShape Bat::getShape()
+{
+	return mBatShape;
+}
+
 // set position to left by one bat speed unit
 void Bat::moveLeft()
 {
@@ -26,7 +32,7 @@ void Bat::moveLeft()
 // set position to right by one bat speed unit
 void Bat::moveRight()
 {
-	mPosition.y += batSpeed;
+	mPosition.x += batSpeed;
 }
 
 // set the updated position of bat
